@@ -1,0 +1,25 @@
+{
+  "name": "phase-2-challenge",
+  "version": "1.0.0",
+  "description": "interview for phase 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnware15/phase-2-challenge.git"
+  },
+  "keywords": [
+    "phase-2"
+  ],
+  "author": "johnware15",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnware15/phase-2-challenge/issues"
+  },
+  "homepage": "https://github.com/johnware15/phase-2-challenge#readme",
+  "dependencies": {
+    "console-assert": "^1.0.0"
+  }
+}
