@@ -1,23 +1,19 @@
 const clients = require('./clients.json');
 const city = process.argv[2];
-let term = ""
-let searchResult = city.toLowerCase()
 
 let clientsByCity = clients.filter(function(term) {
-  return searchResult
+  return (term.city.toLowerCase() == city.toLowerCase())
 });
-console.log(searchResult);
 
-
-let searchOutput = clientsByCity.map(function(searchResult) {
-  searchOutput()
+let searchOutput = clientsByCity.map(function(inquiry) {
   return {
-    "id": searchResult.id,
-    "rep_name": searchResult.rep_name,
-    "company": searchResult.company,
-    "city": searchResult.city,
-    "state": searchResult.state
+     "id": inquiry.id,
+     "rep_name": inquiry.rep_name,
+     "company": inquiry.company,
+     "city": inquiry.city,
+     "state": inquiry.state
   }
-
 });
-console.log(searchOutput);
+
+console.log('Finding companies with name "' + city + '"...');
+console.log (searchOutput);

@@ -23,6 +23,8 @@ let reverseSentence = function(string) {
 }
 
 console.log(reverseSentence("This better work."));
+
+console.log(reverseSentence(1841518451));
 /////////////////////////////////
 let friend = {
   name: 'Dominique',
@@ -36,8 +38,8 @@ var nameProps = function(friend) {
 
 console.log(nameProps(friend));
 
-
 /////////////////////////
+
 let movies = ["Dunkirk", "Valerian", "Black Panther", "Thor: Ragnarok", "Justice League","Wonder Woman", "Death Note", 1826946860]
 
 var filterBetween = function(movies, min, max) {
@@ -52,6 +54,7 @@ var filterBetween = function(movies, min, max) {
 console.log(filterBetween(movies, "Black Panther", "Dunkirk"));
 
 console.log(filterBetween(movies, "Death Note", 1826946860));
+
 ///////////////////////////////////////
 
 module.exports = {
