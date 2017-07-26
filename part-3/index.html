@@ -4,31 +4,35 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<header>
-  <h3>Filmtube</h3>
-  <p>X</p>
-</header>
-<div class="banner">
-  <h3>Filmtube</h3>
-  <button>Logout</button>
-</div>
-<nav>
-  <ul class="nav">
+
+<ul class="title-bar">
+  <li class="header"><h3>Filmtube</h3></li>
+  <li class="header"><p>X</p></li>
+</ul>
+
+<ul class="banner">
+  <li class="pane-banner"><h3>Filmtube</h3></li>
+  <li class="pane-banner"><button>Logout</button></li>
+</ul>
+<table class="main">
+<tr>
+  <td><ul class="nav">
     <li>Categories</li>
     <ul class="sub-nav">
-      <li>Drama</li>
-      <li>Romance</li>
-      <li>Action</li>
-      <li>Sci-Fi</li>
+      <li><a href="drama.html">Drama</li>
+      <li><a href="romance.html">Romance</li>
+      <li><a href="action.html">Action</li>
+      <li><a href="sci-fi.html">Sci-Fi</li>
     </ul>
   </ul>
-</nav>
-
+</td>
+<td class="border">
+</td>
+<td>
 <div class="movies">
   <h2>MOVIES</h2>
   <table>
   <tr><div class="genre">Drama</div></tr>
-
   <tr>
     <td><button class="play">Play</button></td>
     <td>Movie Name</td>
@@ -68,5 +72,8 @@
     <td class="runtime">1:33:21</td>
   </tr>
 </div>
+</tr>
+</td>
+</table>
 </body>
 </html>
